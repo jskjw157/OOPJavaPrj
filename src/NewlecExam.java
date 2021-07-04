@@ -12,4 +12,16 @@ public class NewlecExam extends Exam {
 		this.com = com;
 	}
 	
+	@Override
+	public int total() {
+		
+		return super.total()+com;
+	}
+	
+	@Override
+	public float avg() {
+		
+		return total()/4.0f;
+	}
+	
 }
